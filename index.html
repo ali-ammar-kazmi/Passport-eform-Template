@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Passport_Application_Form</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="m-2 p-2">
+	<div class="border-2 border-solid border-pink-300 flex">
+		<img src="national logo.png" alt="National LoGo" class="h-28" />
+		<div class="m-2">
+			<div>
+				<pre class="text-center font-extrabold text-xl">PASSPORT APPLICATION FORM
+Government of India, Ministry of External Affairs</pre>
+			</div>
+			<span class="text-sm">Please read the Passport Instruction Booklet carefully before filling the form
+				Furnishing of
+				incorrect information.
+				suppression of information would lead to rejection of application andwould attract penal provisions as
+				prescribed
+				under the Passports Act, 1967. Please produce your original documents at the time of submission of the
+				form.
+				All fields marked with (*) are mandatory to fill.</span>
+		</div>
+	</div>
+	<main>
+		<form>
+			<div class="bg-gray-400 font-bold">Service required</div>
+			<div><b>Applying for*</b>
+				<select name="form_status" class="w-80 mx-28 shadow border">
+					<option value="Fresh Passport">Fresh Passport</option>
+					<option value="Re-Issue of Passport">Re-Issue of Passport</option>
+				</select>
+			</div>
+			<div><b class="mr-28">Type of Application*</b>
+				<input type="radio" name="application_type" value="Normal"> Normal
+				<input type="radio" name="application_type" value="Tatkal"> Tatkal
+			</div>
+			<div><b class="mr-16">Type of passport booklet*</b>&ensp;
+				<input type="radio" name="booklet_type" value="36"> 36 pgs
+				<input type="radio" name="booklet_type" value="60"> 60 pgs
+			</div>
+			<div class="bg-gray-400 font-bold">Applicant Details</div>
+			<b>Applicant's Given Name (Given Name means First Name followed by
+				middle Name (if any))*</b>
+			<input type="text" name="myname" class="w-full shadow border">
+			<b>Surname*</b>
+			<input type=" text" name="mysurname" class="w-full shadow border">
+			<div><b class="mr-16">Gender*</b>
+				<select name="mygender" class="shadow border w-44">
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+					<option value="transgender">Transgender</option>
+				</select>
+			</div>
+			<div>
+				<b class="mr-12">Are you known by any other names(aliases)?*</b>
+				<input type="radio" name="alias_name" value="yes"> YES
+				<input type="radio" name="alias_name" value="no"> NO
+			</div>
+			<div><b class="mr-28">Have you ever changed your name ?*</b>
+				<input type="radio" name="mychanged_name" value="yes"> YES
+				<input type="radio" name="mychanged_name" value="no"> NO
+			</div>
+			<div>
+				<b class="mr-12">Date of Birth (DD/MM/YYYY)*</b>
+				<input type="date" name="mybirth_date" class="border shadow">
+			</div>
+			<div class="bg-gray-400 font-bold">Place of birth</div>
+			<div>
+				<b class="mr-32">Is your Place of Birth out of India? *</b>
+				<input type="radio" name="birth_place" value="foreigner"> YES
+				<input type="radio" name="birth_place" value="indian"> NO
+			</div>
+			<div><b class="mr-24">Village or Town or City? *</b>
+				<input type="text" name="domicile" class="shadow border w-1/2">
+			</div>
+			<div><b>Maritial Status *</b>
+				<select name="mymaritial_status" class="shadow border w-72 ml-8">
+					<option value="single">Single</option>
+					<option value="married">Married</option>
+					<option value="divorce">Divorce</option>
+					<option value="widow/widower">Widow/widower</option>
+					<option value="separated">Separated</option>
+				</select>
+				<b>Citizenship of India *</b>
+				<select name="mycitizenship" class="shadow border w-72 ml-8">
+					<option value="birth">Birth</option>
+					<option value="descent">Descent</option>
+					<option value="registration/naturalization">Registration / Naturalization</option>
+				</select>
+			</div>
+			<div><b>Pan (if Available)</b>
+				<input type="text" name="mypan" class="shadow border w-80 ml-8">
+				<b>VoterId (if Available)</b>
+				<input type="text" name="myvoter_id" class="shadow border w-80 ml-8">
+			</div>
+			<div><b>Employment Type*</b>
+				<select name="myemployment_type" class="shadow border w-3/4 ml-8">
+					<option value="governemt">Governemt</option>
+					<option value="private">Private</option>
+					<option value="homemaker">Home Maker</option>
+					<option value="others">Others</option>
+					<option value="self-employed">Self-Employed</option>
+				</select>
+			</div>
+			<div>
+				<b>Is either of your parent (in case of minor)/ spouse, a government servant?*</b>
+				<select name="parent_gov_employee" class="shadow border w-20 ml-8">
+					<option value="yes">Yes</option>
+					<option value="no">No</option>
+				</select>
+			</div>
+			<div><b>Educational Qualification*</b>
+				<select name="myqualification" class="shadow border w-40 ml-8">
+					<option value="8th Pass or Less">8th Pass or Less</option>
+					<option value="10 pass and above ">10 pass and above </option>
+					<option value="Graduate and Above">Graduate and Above</option>
+				</select>&emsp;
+				<b>Are you eligible for Non-ECR category?*</b>&emsp;
+				<select name="non_ecr" class="shadow border w-20 ml-8">
+					<option value="yes">Yes</option>
+					<option value="no">No</option>
+				</select>
+			</div>
+			<div><b>Visible Distinguishing Mark</b>
+				<input type="text" name="any_mark" class="shadow border w-3/4 ml-8">
+			</div>
+			<div>
+				<b>Aadhar Number</b>
+				<input type="text" name="myaadhar" class="shadow border w-3/4 ml-8">
+			</div>
+			<div class="border-2 border-solid border-gray-500 mb-6">
+				<span>I, the holder of above mentioned Aadhaar Number , hereby give my
+					consent to Passport Seva to obtain my Aadhaar Number, Name and
+					Fingerprint/Iris for authentication with UIDAI. I have no objection using
+					my identity and biometric information for validation with Aadhaar (CIDR)
+					database only for the purpose of authentication. <br> I Agree: </span>
+				<input type="checkbox" name="adhar_consent" value="yes"> Yes
+				<input type="checkbox" name="adhar_consent" value="no"> No
+			</div>
+			<div class="bg-gray-400 font-bold">Family Details (Father/Mother/Legal Guardian details;
+				at least one is mandatory.)*</div>
+			<b>Father's Given Name (Given Name means First Name followed by Middle Name (If any))</b>
+			<input type="text" name="father_name" class="w-full shadow border">
+			<span><b>Surname* </b></span>
+			<input type="text" name="father_surname" class="w-full shadow border">
+			<b>Legal Guardian's Given Name (if applicable)</b>
+			<input type="text" name="guardian_name" class="w-full shadow border">
+			<b>surname</b>
+			<input type="text" name="guardian_surname" class="w-full shadow border">
+			<b>Mother's Given Name (Given Name means First Name followed by Middle Name (If any))</b>
+			<input type="text" name="mother_name" class="w-full shadow border">
+			<b>Surname</b>
+			<input type="text" name="mother_surname" class="w-full shadow border">
+			<div class="bg-gray-400 font-bold">Present Residential Address Details (where applicant presently resides)
+			</div>
+			<div><b class="mr-24">Is your present address out of India?</b>
+				<input type="radio" name="location_not_india" value="yes"> Yes
+				<input type="radio" name="location_not_india" valye="no"> No
+			</div>
+			<div><span>House No. and Street Name*</span>&ensp;
+				<input type="text" name="House_no" class="w-10/12 shadow border">
+			</div>
+			<div><span>Village or Town or City*</span> &emsp;
+				<input type="text" name="Domicile" class="w-1/3 shadow border"> &emsp;
+				<span>Region/Country*</span> &emsp;<select name="country" class="w-1/3 shadow border">
+					<option value="india">india</option>
+					<option value="not india">Not india</option>
+				</select>
+			</div>
+			<div><span>State/Province</span> &emsp;
+				<input type="text" name="state" class="w-1/3 shadow border"> &emsp;
+				<span>District/County</span> &emsp;
+				<input type="text" name="district" class="w-1/3 shadow border">
+			</div>
+			<div><span>Zip Code</span> &emsp;
+				<input type="text" name="zip" class="w-1/4 shadow border"> &emsp;
+				<span>Mobile Number *</span>&emsp;
+				<input type="text" name="myMob_number" class="w-1/4 shadow border">&emsp;
+				<span>TelePhone Number</span> &emsp;
+				<input type="text" name="mytel_number" class="w-1/6 shadow border">
+			</div>
+			<div>
+				<span>Email ID *</span> &emsp;
+				<input type="text" name="myemailid" class="w-1/3 shadow border">
+			</div>
+			<div><b class="mr-20">Do you have a Permenant Address?</b> &emsp;
+				<input type="radio" name="permanent_address"> Yes
+				<input type="radio" name="permanent_address"> No
+			</div>
+			<div class="bg-gray-400 font-bold">Emergency Contact Details</div>
+			<span>Name & Address *</span>
+			<input type="text" name="em_info" class="w-full shadow border">
+			<div><span>Mobile Number*</span>&emsp;
+				<input type="text" name="emmob_number" class="w-1/3 shadow border"> &emsp;
+				<span>Telephone Number</span> &emsp;
+				<input type="text" name="emtel_number" class="w-1/3 shadow border"><br>
+				<span class="mr-14">E-mail ID</span>&emsp;<input type="text" name="ememailid"
+					class="w-3/4 shadow border">
+			</div>
+			<div class="bg-gray-400 font-bold">Identity Certificate/ Passport Details</div>
+			<div><b>Have you ever held/hold any Identity Certificate? *</b>&emsp;
+				<input type="radio" name="id_proof" value="yes"> Yes
+				<input type="radio" name="id_proof" value="no"> No
+			</div>
+			<b>(Identity Certificate(IC) is normally issued to Tibetan/other stateless people residing in India)<br>
+				Details of Previous/Current Diplomatic/Official Passport* </b>
+			<div>
+				<input type="radio" name="details_passport" value="available"> Deatils
+				Available &emsp;
+				<input type="radio" name="details_passport" value="not available" class="ml-36"> Details Not
+				Available/Never
+				Held Diplomatic/Official Passport
+			</div>
+			<div>
+				<b>Have you ever applied for passport, but not issued? *</b> &emsp;
+				<input type="radio" name="applied" value="yes"> Yes
+				<input type="radio" name="applied" value="no"> No
+			</div>
+			<div class="bg-gray-400 font-bold">Other Details</div>
+			<div>
+				<ol>
+					<li><b> Provide the following details if there are any criminal proceedings pending against
+							the
+							applicant.</b></li>
+					<ul type="disc">
+						<li><span class="mr-72">Are any proceedings in respect of an offence alleged to have been
+								committed
+								by you pending before a criminal court in
+								India?*</span>
+							<input type="radio" name="criminal_hearing" value="yes"> Yes <input type="radio"
+								name="criminal_hearing" value="no"> No
+						</li>
+						<li><span class="mr-60">Has any warrant or summons for your appearance been issued and pending
+								before
+								a court under any law for the time being in force?* </span>
+							<input type="radio" name="summon" value="yes"> Yes
+							<input type="radio" name="summon" value="no"> No
+						</li>
+						<li><span class="mr-[39%]">Has a warrant for your arrest been issued by a court under any
+								law for the time being in force?*</span>
+							<input type="radio" name="warrant_issued" value="yes"> Yes
+							<input type="radio" name="warrant_issued" value="no"> No
+						</li>
+						<li><span class="mr-[48%]">Has an order prohibiting your departure from India been made by any
+								court?*</span>&nbsp;
+							<input type="radio" name="stay_india" value="yes"> Yes
+							<input type="radio" name="stay_india" value="no"> No
+						</li>
+					</ul>
+					<li><b>Provide the following details if the applicant has been convicted by a court in
+							India.</b></li>
+					<ul type="disc">
+						<li><span class="mr-[50%]">Have you, at any time during the period of five years immediately
+								preceding the date of this application, been convicted by a
+								court in India for offence involving moral turpitude and
+								sentenced in respect thereof to imprisonment for not less than two
+								years?*</span>
+							<input type="radio" name="imprisonment" value="yes"> Yes
+							<input type="radio" name="imprisonment" value="no"> No
+						</li>
+					</ul>
+				</ol>
+			</div>
+			<div class="border-2 border-solid border-gray-500 mb-6 text-sm">
+				<p class="bg-gray-400 font-bold">Self Declaration</p>
+				<span>I owe allegiance to the sovereignty, unity & integrity of India, and have not voluntarily
+					acquired
+					citizenship or travel document of any
+					other country. I have not lost, surrendered or been deprived of the citizenship of India. I
+					have not
+					contravened any of the conditions
+					relating to the possession and use of an Indian passport.
+					I affirm that the information and particulars given by me in this form are true and correct.
+					I
+					further
+					state that I am not suppressing any
+					material information in this regard. I further affirm that the enclosures and documentary
+					proof
+					submitted in support of my application for
+					an Indian passport are authentic and solely pertain to me and I am fully responsible for the
+					accuracy of
+					the same. I am liable to be
+					penalized or prosecuted if found otherwise. I am aware that under the Passports Act, 1967 it
+					is a
+					criminal offence to furnish any false
+					information or to suppress any material information with a view to obtaining passport or
+					travel
+					document.
+					I have read and understood the contents of the above and by submitting this form certify
+					that all
+					the
+					information submitted by me in the
+					form is bonafide. </span><br>
+				<input type="checkbox" name="Concent" value="agree"> I Agree
+			</div>
+			<div>
+				Place * <input type="text" name="place" class="shadow border w-1/2"> &nbsp;
+				date(DD/MM/YY) * <input type="text" name="today_date" class="shadow border w-1/5">
+			</div><br>
+	</main>
+	<div class="text-sm">
+		<strong>Note:</strong><br>
+		<span>Applicants are required to submit the proof of address of the
+			present
+			address only, irrespective
+			of the date from which he/she has been
+			residing at the given address.</span>
+	</div><br>
+	<button type="button" class="shadow border-2 border-solid bg-gray-400">Validate & Save</button>
+	</form>
+</body>
+
+</html>
